@@ -93,11 +93,11 @@ config :mobilizon, Mobilizon.Web.Email.Mailer,
   server: "localhost",
   hostname: "localhost",
   # usually 25, 465 or 587
-  port: 25,
+  port: 587,
   # or {:system, "SMTP_USERNAME"}
-  username: nil,
+  username: __USERNAME__,
   # or {:system, "SMTP_PASSWORD"}
-  password: nil,
+  password: __PASSWORD__,
   # can be `:always` or `:never`
   tls: :if_available,
   # or {":system", ALLOWED_TLS_VERSIONS"} w/ comma seprated values (e.g. "tlsv1.1,tlsv1.2")
